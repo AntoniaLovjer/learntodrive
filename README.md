@@ -1,6 +1,6 @@
 # learntodrive
 
-Implementation of Using Segmentation Masks in the ICCV 2019 Learning to Drive Challenge, Antonia Lovjer, Minsu Yeom, Benedikt Schifferer. 
+Implementation of Using Segmentation Masks in the ICCV 2019 Learning to Drive Challenge. 
 
 In this work we predict vehicle speed and steering angle given camera image frames. We use an external pre-trained neural network for semantic segmentaion, and we augment the raw images with their segmentation masks and mirror images. We ensemble three diverse neural network models to achieve the **second best performance for both MSE angle and second best performance overall in the ICCV Learning to Drive challenge**. Our three neural network models are (i) a CNN using a single image and its segmentation mask, (ii) a stacked CNN taking as input a sequence of images and segmentation masks, and (iii) a bidirectional GRU, extracting image features using a pre-trained ResNet34, DenseNet121 and our own CNN single image model.
 
